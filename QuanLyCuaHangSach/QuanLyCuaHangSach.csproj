@@ -1,0 +1,336 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EBAF2C5-07E9-4932-B85C-9A886D0D5D44}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyCuaHangSach</RootNamespace>
+    <AssemblyName>QuanLyCuaHangSach</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44386</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BanHang.aspx" />
+    <Content Include="ChiTietHD.aspx" />
+    <Content Include="ChiTietKhachHang.aspx" />
+    <Content Include="ChiTietSach.aspx" />
+    <Content Include="DefaultAdmin.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DSKhachHang.aspx" />
+    <Content Include="HoaDon.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\10.jpg" />
+    <Content Include="Images\11.jpg" />
+    <Content Include="Images\12.jpg" />
+    <Content Include="Images\13.jpg" />
+    <Content Include="Images\14.jpg" />
+    <Content Include="Images\15.jpg" />
+    <Content Include="Images\16.jpg" />
+    <Content Include="Images\17.jpg" />
+    <Content Include="Images\18.jpg" />
+    <Content Include="Images\19.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\20.jpg" />
+    <Content Include="Images\21.jpg" />
+    <Content Include="Images\22.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\9.jpg" />
+    <Content Include="Images\adayroi-banner.jpg" />
+    <Content Include="Images\baner01.jpg" />
+    <Content Include="Images\icon_list1.gif" />
+    <Content Include="Images\SachMau.jpg" />
+    <Content Include="KhachHang.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="QuanLyNXB.aspx" />
+    <Content Include="QuanLySach.aspx" />
+    <Content Include="QuanLyTheLoai.aspx" />
+    <Content Include="SachTheoTheLoai.aspx" />
+    <Content Include="UCC_AllSachDataList.ascx" />
+    <Content Include="UCC_Banner.ascx" />
+    <Content Include="UCC_Footer.ascx" />
+    <Content Include="UCC_MenuNgang.ascx" />
+    <Content Include="UCC_TheLoaiSach.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanHang.aspx.cs">
+      <DependentUpon>BanHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang.aspx.designer.cs">
+      <DependentUpon>BanHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietKhachHang.aspx.cs">
+      <DependentUpon>ChiTietKhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietKhachHang.aspx.designer.cs">
+      <DependentUpon>ChiTietKhachHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\BanHangDao.cs" />
+    <Compile Include="ChiTietHD.aspx.cs">
+      <DependentUpon>ChiTietHD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietHD.aspx.designer.cs">
+      <DependentUpon>ChiTietHD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\ChiTietKhachHangDAO.cs" />
+    <Compile Include="DAO\DSKhachHangDAO.cs" />
+    <Compile Include="DAO\NXBDAO.cs" />
+    <Compile Include="DSKhachHang.aspx.cs">
+      <DependentUpon>DSKhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DSKhachHang.aspx.designer.cs">
+      <DependentUpon>DSKhachHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ChiTietHoaDon.cs" />
+    <Compile Include="DAO\ChiTietHoaDonDAO.cs" />
+    <Compile Include="ChiTietSach.aspx.cs">
+      <DependentUpon>ChiTietSach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSach.aspx.designer.cs">
+      <DependentUpon>ChiTietSach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\ChiTietSachDAO.cs" />
+    <Compile Include="DefaultAdmin.aspx.cs">
+      <DependentUpon>DefaultAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultAdmin.aspx.designer.cs">
+      <DependentUpon>DefaultAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\HDon.cs" />
+    <Compile Include="DTO\NXB.cs" />
+    <Compile Include="HoaDon.aspx.cs">
+      <DependentUpon>HoaDon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoaDon.aspx.designer.cs">
+      <DependentUpon>HoaDon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DTO\KH.cs" />
+    <Compile Include="KhachHang.aspx.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KhachHang.aspx.designer.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage_Admin.Master.cs">
+      <DependentUpon>MasterPage_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_Admin.Master.designer.cs">
+      <DependentUpon>MasterPage_Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage_TrangChu.Master.cs">
+      <DependentUpon>MasterPage_TrangChu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_TrangChu.Master.designer.cs">
+      <DependentUpon>MasterPage_TrangChu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyNXB.aspx.cs">
+      <DependentUpon>QuanLyNXB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyNXB.aspx.designer.cs">
+      <DependentUpon>QuanLyNXB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySach.aspx.cs">
+      <DependentUpon>QuanLySach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLySach.aspx.designer.cs">
+      <DependentUpon>QuanLySach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTheLoai.aspx.cs">
+      <DependentUpon>QuanLyTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyTheLoai.aspx.designer.cs">
+      <DependentUpon>QuanLyTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Sach.cs" />
+    <Compile Include="DAO\SachDAO.cs" />
+    <Compile Include="SachTheoTheLoai.aspx.cs">
+      <DependentUpon>SachTheoTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SachTheoTheLoai.aspx.designer.cs">
+      <DependentUpon>SachTheoTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\SachTheoTheLoaiDAO.cs" />
+    <Compile Include="DTO\TheLoai.cs" />
+    <Compile Include="DAO\TheLoaiDAO.cs" />
+    <Compile Include="UCC_AllSachDataList.ascx.cs">
+      <DependentUpon>UCC_AllSachDataList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCC_AllSachDataList.ascx.designer.cs">
+      <DependentUpon>UCC_AllSachDataList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\UCC_AllSachDataListDAO.cs" />
+    <Compile Include="UCC_Banner.ascx.cs">
+      <DependentUpon>UCC_Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCC_Banner.ascx.designer.cs">
+      <DependentUpon>UCC_Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCC_Footer.ascx.cs">
+      <DependentUpon>UCC_Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCC_Footer.ascx.designer.cs">
+      <DependentUpon>UCC_Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCC_MenuNgang.ascx.cs">
+      <DependentUpon>UCC_MenuNgang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCC_MenuNgang.ascx.designer.cs">
+      <DependentUpon>UCC_MenuNgang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCC_TheLoaiSach.ascx.cs">
+      <DependentUpon>UCC_TheLoaiSach.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCC_TheLoaiSach.ascx.designer.cs">
+      <DependentUpon>UCC_TheLoaiSach.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\UCC_TheLoaiSachDAO.cs" />
+    <Compile Include="DTO\User.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage_TrangChu.Master" />
+    <Content Include="MasterPage_Admin.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60736</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44386/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

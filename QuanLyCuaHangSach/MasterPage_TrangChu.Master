@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_TrangChu.master.cs" Inherits="QuanLyCuaHangSach.MasterPage_TrangChu" %>
+
+
+<%@ Register src="UCC_Banner.ascx" tagname="UCC_Banner" tagprefix="uc1" %>
+<%@ Register src="UCC_MenuNgang.ascx" tagname="UCC_MenuNgang" tagprefix="uc2" %>
+<%@ Register src="UCC_TheLoaiSach.ascx" tagname="UCC_TheLoaiSach" tagprefix="uc3" %>
+<%@ Register src="UCC_Footer.ascx" tagname="UCC_Footer" tagprefix="uc4" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            width: 100%;
+        }
+        .style5
+        {
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <table cellspacing="0" class="style1" cellpadding="0">
+        <tr>
+            <td colspan="2">
+                <uc1:UCC_Banner ID="UCC_Banner1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <uc2:UCC_MenuNgang ID="UCC_MenuNgang1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top" width="25%">
+                <table cellspacing="1" class="style4" width="100%">
+                    <tr>
+                        <td align="center" class="style5" 
+                            style="background-color: #006666; font-weight: bold;">
+                            THỂ LOẠI SÁCH</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <uc3:UCC_TheLoaiSach ID="UCC_TheLoaiSach1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td align="left" valign="top" width="75%">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <uc4:UCC_Footer ID="UCC_Footer1" runat="server" />
+            </td>
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>
+

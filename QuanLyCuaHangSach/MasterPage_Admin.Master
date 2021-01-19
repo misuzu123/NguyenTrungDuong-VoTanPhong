@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_Admin.master.cs" Inherits="QuanLyCuaHangSach.MasterPage_Admin" %>
+
+<%@ Register src="UCC_Banner.ascx" tagname="UCC_Banner" tagprefix="uc1" %>
+<%@ Register src="UCC_Footer.ascx" tagname="UCC_Footer" tagprefix="uc2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 27px;
+        }
+        .style3
+        {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <uc1:UCC_Banner ID="UCC_Banner1" runat="server" />
+    <table cellspacing="1" class="style1" width="100%">
+        <tr>
+            <td align="left" valign="top" width="25%">
+                <table cellspacing="1" class="style1" width="100%">
+                    <tr>
+                        <td align="center" class="style2" 
+                            style="font-weight: bold; background-color: #CC6600; color: #FFFFFF">
+                            <asp:HyperLink ID="HyperLink0" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/DefaultAdmin.aspx">MENU QUẢN TRỊ</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink1" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/BanHang.aspx">Bán sách</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink6" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/KhachHang.aspx">Quản lý khách hàng</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink8" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/DSKhachHang.aspx">Danh sách khách hàng</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink7" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/HoaDon.aspx">Danh sách hóa đơn</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;" 
+                            class="style3">
+                            <asp:HyperLink ID="HyperLink3" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/QuanLySach.aspx">Quản lý sách</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink4" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/QuanLyNXB.aspx">Quản lý NXB</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink2" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/QuanLyTheLoai.aspx">Quản lý thể loại</asp:HyperLink>
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td style="background-color: #9966FF; color: #000066; font-size: large;">
+                            <asp:HyperLink ID="HyperLink5" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Default.aspx">Đăng xuất</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td align="left" valign="top" width="75%">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <uc2:UCC_Footer ID="UCC_Footer1" runat="server" />
+            </td>
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>
+
